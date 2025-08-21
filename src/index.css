@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-specific base styles */
+:root { color-scheme: light; }
+html,body,#root { height: 100%; }
+body { margin: 0; }

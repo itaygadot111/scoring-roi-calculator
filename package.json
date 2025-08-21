@@ -1,0 +1,19 @@
+{
+  "name": "roi-cs-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "esbuild src/main.jsx --bundle --outfile=dist/bundle.js --format=iife --jsx=automatic --jsx-import-source=react --sourcemap --servedir=dist --loader:.svg=dataurl",
+    "build": "esbuild src/main.jsx --bundle --outfile=dist/bundle.js --format=iife --jsx=automatic --jsx-import-source=react --minify --loader:.svg=dataurl"
+  },
+  "dependencies": {
+    "react": "18.x",
+    "react-dom": "18.x",
+    "lucide-react": "latest",
+    "clsx": "latest",
+    "@radix-ui/react-tooltip": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "latest"
+  }
+}
